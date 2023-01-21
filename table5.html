@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>table</title>
+</head>
+<body>
+    <table border="1" cellpadding="10" >
+        <h1>Nester Tables</h1>
+        <tr>
+            <th>Header column1</th>
+            <th>Header column2</th>
+            <th>Header column3</th>
+            <th>Header column4</th>
+        </tr>
+        <tr>
+            <td>Row2-Item1</td>
+            <td>Row2-Item2</td>
+            <th rowspan="4">Row2-Nested Table1<table border="1"><tr><th>Row1Header</th><td>item</td></tr>
+                <tr><th>Row2Header</th><td>item</td></tr>
+                <tr><th>Row3Header</th><td>item</td></tr>
+                </table>
+                </th>
+            <td>Row2-Item4<br>A second line</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Row3-Nested Table2<table border="1"><tr><th>Row1Header</th><td>item</td></tr>
+                <tr><th>Row2Header</th><td>item</td></tr>
+                </table></td>
+            <td rowspan="3">Row3-Item2</td>
+            <td rowspan="4">Row3-Item3</td>
+        </tr>
+        <tr>
+            <td>Row4-Item1</td>
+            <td>Row4-Item2</td>
+            <td>Row4-Item3</td>
+        </tr>
+        <tr>
+            <td colspan="4">Row5-Last row of outer table</td>
+        </tr>
+    </table>
+</body>
+</html>
+    
